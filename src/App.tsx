@@ -13,7 +13,6 @@ import { HomePage } from './pages/HomePage';
 
 const AboutPage = lazy(() => import('./pages/AboutPage').then((m) => ({ default: m.AboutPage })));
 const ProductsPage = lazy(() => import('./pages/ProductsPage').then((m) => ({ default: m.ProductsPage })));
-const GalleryPage = lazy(() => import('./pages/GalleryPage').then((m) => ({ default: m.GalleryPage })));
 const ContactPage = lazy(() => import('./pages/ContactPage').then((m) => ({ default: m.ContactPage })));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage').then((m) => ({ default: m.NotFoundPage })));
 
@@ -44,7 +43,6 @@ function AnimatedRoutes() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<Suspense fallback={<PageLoader />}><AboutPage /></Suspense>} />
         <Route path="/products" element={<Suspense fallback={<PageLoader />}><ProductsPage /></Suspense>} />
-        <Route path="/gallery" element={<Suspense fallback={<PageLoader />}><GalleryPage /></Suspense>} />
         <Route path="/contact" element={<Suspense fallback={<PageLoader />}><ContactPage /></Suspense>} />
         <Route path="*" element={<Suspense fallback={<PageLoader />}><NotFoundPage /></Suspense>} />
       </Routes>

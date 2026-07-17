@@ -4,7 +4,6 @@ import { CategoriesSection } from '../components/home/CategoriesSection';
 import { FeaturedProductsSection } from '../components/home/FeaturedProductsSection';
 import { WhyChooseSection } from '../components/home/WhyChooseSection';
 import { ProcessSection } from '../components/home/ProcessSection';
-import { GalleryPreviewSection } from '../components/home/GalleryPreviewSection';
 import { TestimonialsSection } from '../components/home/TestimonialsSection';
 import { FaqSection } from '../components/home/FaqSection';
 import { CtaSection } from '../components/home/CtaSection';
@@ -19,7 +18,6 @@ export function HomePage() {
       <FeaturedProductsSection />
       <WhyChooseSection />
       <ProcessSection />
-      <GalleryPreviewSection />
       <TestimonialsSection />
       <FaqSection />
       <CtaSection />
